@@ -18,7 +18,7 @@ if __name__ == '__main__':
     t0 = t2 - t1
     l = int(MBUDGET/t0) + 1
 
-    total_budget_mults = np.arange(l,0,-2)
+    total_budget_mults = np.array([l])
 
     K = 2
     C_init = 0.8
