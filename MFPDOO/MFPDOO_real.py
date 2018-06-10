@@ -168,7 +168,7 @@ class MFoptTree_news(object):
             if current.cell == children[0].cell:
                 break
             cost = cost + curr_cost
-            print 'Cost Used by current SOO: ' + str(cost)
+            print 'Cost Used by current MFDOO: ' + str(cost)
             for child in children:
                 leaf_Q.put(child)
 
@@ -213,7 +213,7 @@ class MFoptTree_news(object):
             if current.cell == children[0].cell:
                 break
             cost = cost + curr_cost
-            print 'Cost Used by current SOO: ' + str(cost)
+            print 'Cost Used by current MFOO: ' + str(cost)
             for child in children:
                 leaf_Q.put(child)
 
@@ -299,7 +299,7 @@ class MFoptTree_news(object):
         results = []
         for i in range(N):
             if Debug:
-                print 'SOO #: ' + str(i) + '  ',
+                print 'MFDOO #: ' + str(i) + '  ',
             rho = (self.rho_max)**(float(N)/(i+1))
             est,fidel,point,cost,h = self.run_DOO_fid1(budget,nu,rho)
             if Debug:
@@ -321,7 +321,7 @@ def run_experiment(mfobject,nu_max,rho_max,total_budget_mults,K,C_init,tol,POO_m
     C = []
     for m in total_budget_mults:
         total_budget = m*t0
-        print 'Running POO at total budget: ' + str(total_budget)
+        print 'Running MFPDOO at total budget: ' + str(total_budget)
         if isfid1:
             auto = False
             print 'Running at Fidelity 1'
