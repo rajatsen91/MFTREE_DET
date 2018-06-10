@@ -18,7 +18,7 @@
   2. Set `mfobject` as the desired function. For instance it has been set as `borehole`.
   3. Now from the root directory of the project run `python MFPDOO/experiments_synthetic.py`
 
-  __Running SVM parameter tunign example__
+  __Running SVM parameter tuning example__
 
   1. For hyper-paremeter tuning we need to convert the parameter tuning problem into a multi-fidelity black box optimization object `mfobject` like those of the synthetic functions.
   2. An example for such an object is given in the `v2_news/news_classifier.py` in the context of tuning svm for the 20 news group data-set. The file is fairly self-explanatory and the user can create similar objects for other parameter tuning examples. 
