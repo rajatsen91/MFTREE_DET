@@ -1,4 +1,5 @@
-
+Code for the paper: http://proceedings.mlr.press/v80/sen18a/sen18a.pdf
+Please cite the above paper if using this code base for a publication. 
 ### Installation
 
 - You first need to build the direct fortran library. For this `cd` into
